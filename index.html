@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script>
+        
+        var firebaseConfig = {
+          apiKey: "AIzaSyA1bhVGc6Z9O3kUPEcfiQUhxH-Gk3QHf8Y",
+          authDomain: "todoapp-with-database1.firebaseapp.com",
+          databaseURL: "https://todoapp-with-database1.firebaseio.com",
+          projectId: "todoapp-with-database1",
+          storageBucket: "todoapp-with-database1.appspot.com",
+          messagingSenderId: "693900543792",
+          appId: "1:693900543792:web:a2253b5524f9dbcfda6af5",
+          measurementId: "G-NQLV131TEH"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+</head>
+<body>
+    <div class="wrapper">
+
+    <div class="main">
+    <h1><span class="tittle">TODO</h1>
+  <div class="main2">
+      <input type="text" id="task-input" placeholder="What Do You Want to Do...">
+      <button class="fa fa-plus add" onclick="addEvents()"></button>
+      <button class="fa fa-trash remove-all" onclick="removeAll()"></button>
+  </div>
+  <div class="main3"> 
+      <ul id="list">
+      </ul>
+  </div>
+</div>
+<div class="box">
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    <div class="div"></div>
+    
+</div>
+ 
+</div> 
+  
+  <script src="app.js"></script>
+</body>
+</html>
